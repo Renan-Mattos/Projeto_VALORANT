@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Valorant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./src/css/reset.css">
+  <link type="text/css" rel="stylesheet" href="./src/css/style.css">
+  <link type="text/css" rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="logo" src="./src/imagens/LG_W.png" alt=" Logo-Valorant">
+  </header>
+
+  <main class=" selecao-de-agentes">
+    <section class="agentes">
+      <h1 class="titulo"> Selecione um Agente </h1>
+      <ul class="lista-de-agentes" id="lista-de-agentes">
+        <li class="agente selecionado" id="sage" data-name="Sage" data-description="Como uma verdadeira fortaleza chinesa. Sage traz segurança para si mesma e para a equipe aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, ela oferece um centro de calmaria em meio ao caos da batalha." data-function="SENTINELA" data-description-function="Sentinelas são especialistas em defesa que podem bloquear áreas e vigiar flancos, tanto nas rodadas de ataque, quanto nas de defesa.">
+          <img src="./src/imagens/Card_Sage.jpg" alt="Agente Sage" style="border:5px solid  #85edd1">
+        </li>
+        <li class="agente" id="breach" data-name="Breach" data-description="Breach, o homem-biônico sueco,dispara poderosos jatos cinéticos para forçar a abertura de um caminho pelo território inimigo. O dano e a interrupção que ele causa garantem que nenhuma luta seja justa." data-function="INICIADOR" data-description-function="Iniciadores desafiam situações arriscadas,preparando a equipe para entrar em terreno contestado e rechaçar defensores.">
+          <img src="./src/imagens/Card_Breach.jpg" alt="Agente Breach" style="border:5px solid #ce651a">
+        </li>
+        <li class="agente" id="brimstone" data-name="Brimstone" data-description="Vindo diretamente dos EUA, o arsenal orbital do Brimstone garante que o esquadrão dele sempre esteja em vantagem. Sua capacidade de oferecer utilitários com precisão e segurança faz dele im comandante inigualável na linha de frente." data-function="CONTROLADOR" data-description-function="Controladores se dedicam a dissecar territórios perigosos e pavimentar o caminho do sucesso para a equipe.">
+          <img src="./src/imagens/Card_Brimstone.jpg" alt="Agente" style="border:5px solid #ba5414">
+        </li>
+        <li class="agente" id="chamber" data-name="Chamber" data-description="Bem-vestido e armado até os dentes , o criador de armas francês Chamber coloca os inimigos para correr com precisão mortal. Use e abuse do arsenal personalizado dele para segurar posições e abater inimigos de longe,criando a defesa perfeita para qualquer plano." data-function="SENTINELA" data-description-function="Sentinelas são especialistas em defesa que podem bloquear áreas e vigiar flancos, tanto nas rodadas de ataque, quanto nas de defesa.">
+          <img src="./src/imagens/Card_Chamber.jpg" alt="" style="border:5px solid #a9853c">
+        </li>
+        <li class="agente" id="cypher" data-name="Cypher" data-description="Cypher, um vendedor de informações do MArrocos, é uma veradeira rede de vigilância de um homem só que fica de olho em cada movimento dos inimigos. Nenhum segredo está a salvo. Nenhuma manobra passa despercebida. Cypher está sempre vigiando." data-function="SENTINELA" data-description-function="Sentinelas são especialistas em defesa que podem bloquear áreas e vigiar flancos, tanto nas rodadas de ataque, quanto nas de defesa.">
+          <img src="./src/imagens/Card_Cypher.jpg" alt="" style="border:3px solid #7a8e95">
+        </li>
+        <li class="agente" id="deadlock" data-name="DeadLock" data-description="A agente norueguesa Deadlock posiciona uma gama de nanofios de alta tecnologia para proteger o campo de batalha até mesmo do ataque mais letal. ninguém escapa do seu olhar vigilante. Ninguém sobrevive à sua ferocidade implacável." data-function="SENTINELA" data-description-function="Sentinelas são especialistas em defesa que podem bloquear áreas e vigiar flancos, tanto nas rodadas de ataque, quanto nas de defesa.">
+          <img src="./src/imagens/Card_DeadLock.jpg" alt="" style="border:3px solid #487192">
+        </li>
+        <li class="agente" id="fade" data-name="Fade" data-description="Fade, uma caçadora de recompensas turca,usa o poder dos pesadelos para capturar os segredos dos inimigos.Personificando o próprio terror, ela persegue os alvos e revela seus medos mais profundos para,depois,destruí-los na escuridão." data-function="INICIADOR" data-description-function="Iniciadores desafiam situações arriscadas,preparando a equipe para entrar em terreno contestado e rechaçar defensores.">
+          <img src="./src/imagens/Card_Fade.jpg" alt="" style="border:3px solid #401c3c">
+        </li>
+        <li class="agente" id="gekko" data-name="Gekko" data-description="Gekko, de Los Angeles, lidera um grupo muito unido de criaturas caóticas. Seus amigos atropelam tudo,tirando os inimigos do caminho. Depois,Gekko corre atrás deles para reagrupálos e reiniciar o processo." data-function="INICIADOR" data-description-function="Iniciadores desafiam situações arriscadas,preparando a equipe para entrar em terreno contestado e rechaçar defensores.">
+          <img src="./src/imagens/Card_Gekko.jpg" alt="" style="border:3px solid #84d456">
+        </li>
+        <li class="agente" id="astra" data-name="Astra" data-description="Astra,a Agente ganense,utiliza energias cósmicas para moldar o campo de batalha a seu bel-prazer. Com total domínio da sua forma astral e um talento estratégico nato, ela está sempre anos-luz à frente dosm inimigos." data-function="CONTROLADOR" data-description-function="Controladores se dedicam a dissecar territórios perigosos e pavimentar o caminho do sucesso para a equipe.">
+          <img src="./src/imagens/Card_Astra.jpg" alt="" style="border:3px solid #c45dcc">
+        </li>
+        <li class="agente" id="harbor" data-name="Harbor" data-description="Vindo do litoral indiano, Harbor entra em campo com a força da tormenta,empunhando tecnologia ancestral ccom domínio sobre a água. Ele libera corredeiras espumantes e ondas esmagadoras para proteger seus aliados ou atacar aqueles que se opôem a ele." data-function="CONTROLADOR" data-description-function="Controladores se dedicam a dissecar territórios perigosos e pavimentar o caminho do sucesso para a equipe.">
+          <img src="./src/imagens/Card_Harbor.jpg" alt="" style="border:3px solid #12a3d2">
+        </li>
+        <li class="agente" id="jett" data-name="Jett" data-description="Representando a Coreia do Sul,sua terra natal,Jett tem um estilo de luta ágil e evasivo que permite que ela assuma riscos como ninguém. Ela corre em meio a qualquer confronto, cortando os inimigos antes mesmo que eles percebam quem ou o que os atingiu." data-function="DUELISTA" data-description-function="Duelista são abatedores independentes que estão sempre prontos para o confronto. Eles usam habilidades e perícia para conseguir vários abates.">
+          <img src="./src/imagens/Card_Jett.jpg" alt="" style="border:3px solid #7ae8f4">
+        </li>
+        <li class="agente" id="kay-o" data-name="Kay/O" data-description="KAY/O é uma máquina de guerra construída com um único propósito: neutralizar Radiantes. Ele é capaz de Suprimir habilidades inimigas,anulando a capacidade de contra-ataque dos adversários e dando a si próprio e a seus aliados uma vantagem essencial em combate." data-function="INICIADOR" data-description-function="Iniciadores desafiam situações arriscadas,preparando a equipe para entrar em terreno contestado e rechaçar defensores.">
+          <img src="./src/imagens/Card_Kay-O.jpg" alt="" style="border:3px solid #0f27a1">
+        </li>
+        <li class="agente" id="killjoy" data-name="Killjoy" data-description="Killjoy, uma alemã genial,defende posições-chave no campo de batalha facilmente com seu arsenal de invenções; Se o dano causado por seu equipamento não der cabo dos inimigos,os efeitos negativos de seus queridos robôs dão conta do recado." data-function="SENTINELA" data-description-function="Sentinelas são especialistas em defesa que podem bloquear áreas e vigiar flancos, tanto nas rodadas de ataque, quanto nas de defesa.">
+          <img src="./src/imagens/Card_Killjoy.jpg" alt="" style="border:3px solid #fbee06">
+        </li>
+        <li class="agente" id="neon" data-name="Neon" data-description="Neon, nossa Agente filipina,avança em velocidades incríveis,descarregando surtos de radiância bioelétrica tão rapidamente quanto seu corpo consegue gerá-los. Ela corre à frente para pegar os inimigos de surpresa, abatendo-os mais rápido do que um raio." data-function="DUELISTA" data-description-function="Duelista são abatedores independentes que estão sempre prontos para o confronto. Eles usam habilidades e perícia para conseguir vários abates.">
+          <img src="./src/imagens/Card_Neon.jpg" alt="" style="border:3px solid #460ec2">
+        </li>
+        <li class="agente" id="omen" data-name="Omen" data-description="Omen,uma lembrança fantasmagórica,caça nas sombras; Ele cega os inimigos,teleporta-se pelo campo e deixa a paranoia assumir o controle enquanto o adversário tenta descobrir de onde virá seu próximo ataque." data-function="CONTROLADOR" data-description-function="Controladores se dedicam a dissecar territórios perigosos e pavimentar o caminho do sucesso para a equipe.">
+          <img src="./src/imagens/Card_Omen.jpg" alt="" style="border:3px solid #000053">
+        </li>
+        <li class="agente" id="phoenix" data-name="Phoenix" data-description="Chegando com tudo diretamente do Reino Unido, o poder estelar de Phoenix reluz em seu estilo de luta, incendiando o campo de batalha com luz e estilo. tendo ajuda ou não,ele entra na luta como e quando achar que deve." data-function="DUELISTA" data-description-function="Duelista são abatedores independentes que estão sempre prontos para o confronto. Eles usam habilidades e perícia para conseguir vários abates.">
+          <img src="./src/imagens/Card_Phoenix.jpg" alt="" style="border:3px solid #f3880b">
+        </li>
+        <li class="agente" id="raze" data-name="Raze" data-description="Raze chega do Brasil com uma explosão de carisma e armas enormes. Com seu estilo de jogo porradeiro,ela é craque em desentocar inimigos entrincheirados e limparB espaços apertados com uma bela dose de BUUUM!" data-function="DUELISTA" data-description-function="Duelista são abatedores independentes que estão sempre prontos para o confronto. Eles usam habilidades e perícia para conseguir vários abates.">
+          <img src="./src/imagens/Card_Raze.jpg" alt="" style="border:3px solid #f3880b">
+        </li>
+        <li class="agente" id="reyna" data-name="Reyna" data-description="Criada no coração do México, Reyna domina o combate individual,destacando-se a cada abate efetuado. Sua capacidade só é limitada por sua própria perícia,tornando-a bastante dependente de desempenho." data-function="DUELISTA" data-description-function="Duelista são abatedores independentes que estão sempre prontos para o confronto. Eles usam habilidades e perícia para conseguir vários abates.">
+          <img src="./src/imagens/Card_Reyna.jpg" alt="" style="border:3px solid #bc04af">
+        </li>
+        <li class="agente" id="skye" data-name="Skye" data-description="Mandando um salve direto da Austrália,Skye e sua equipe de feras desbravam territórios hostis. Com seus poderes de cura e suas criações que partem pra cima dos inimigos,qualquer equipe ficará mais forte e mais segura tendo Skye como aliada." data-function="INICIADOR" data-description-function="Iniciadores desafiam situações arriscadas,preparando a equipe para entrar em terreno contestado e rechaçar defensores.">
+          <img src="./src/imagens/Card_Skye.jpg" alt="" style="border:3px solid #73c21c">
+        </li>
+        <li class="agente" id="sova" data-name="Sova" data-description="Nascido sob o eterno inverno das tundras russa,Sova rastreia,encontra e elimina inimigos com eficiência e precisão implacáveis. Seu arco personalizado e suas habilidades inigualáveis de reconhecimento garantem que nenhuma presa escape." data-function="INICIADOR" data-description-function="Iniciadores desafiam situações arriscadas,preparando a equipe para entrar em terreno contestado e rechaçar defensores.">
+          <img src="./src/imagens/Card_Sova.jpg" alt="" style="border:3px solid #f3e8a5">
+        </li>
+        <li class="agente" id="viper" data-name="Viper" data-description="Viper,a química dos Estados Unidos,emprega uma variedade de dispositivos químicos venenosos para controlar o campo de batalha e prejudicar a visão do inimigo. Se as toxinas não matarem a presa,seus jogos mentais certamente o farão." data-function="CONTROLADOR" data-description-function="Controladores se dedicam a dissecar territórios perigosos e pavimentar o caminho do sucesso para a equipe.">
+          <img src="./src/imagens/Card_Viper.jpg" alt="" style="border:3px solid #00a900">
+        </li>
+        <li class="agente" id="yoru" data-name="Yoru" data-description="Yoru, nativo do Japão,abre fendas na relaidade para infiltrar as linhas inimigas sem ser visto. ele usa tanto artimanhas quanto táticas agressivas,e os alvos são abatidos sem saber de onde o atque veio." data-function="DUELISTA" data-description-function="Duelista são abatedores independentes que estão sempre prontos para o confronto. Eles usam habilidades e perícia para conseguir vários abates.">
+          <img src="./src/imagens/Card_Yoru.jpg" alt="" style="border:3px solid #0600a0">
+        </li>
+      </ul>
+    </section>
+    <section class="agente-selecionado">
+      <img class="agente-grande" src="./src/imagens/Sage_Grande.png" alt="Agente Selecionado">
+
+      <div class="informacoes-agente">
+        <h2 class="nome-agente" id="nome-agente">SAGE</h2>
+        <p class="descricao-agente" id="descricao-agente">Como uma verdadeira fortaleza chinesa. Sage traz segurança para si mesma e para a equipe aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, ela oferece um centro de calmaria em meio ao caos da batalha.
+        </p>
+        <div>
+          <h4 class="funcao-agente" id="funcao-agente">SENTINELA</h4>
+          <p class="descricao-da-funcao" id="descricao-da-funcao">Sentinelas são especialistas em defesa que podem bloquear áreas e vigiar flancos, tanto nas rodadas de ataque, quanto nas de defesa.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>
